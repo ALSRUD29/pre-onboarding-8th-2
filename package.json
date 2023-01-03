@@ -12,6 +12,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "postinstall": "husky install",
+    "format": "prettier --cache --write .",
+		"lint": "eslint --cache .",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -38,6 +41,7 @@
   "devDependencies": {
     "eslint": "^8.31.0",
     "eslint-config-prettier": "^8.6.0",
+    "husky": "^8.0.3",
     "prettier": "^2.8.1"
   }
 }
